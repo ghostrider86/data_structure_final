@@ -1,6 +1,6 @@
 # Data Structure Tutorial
 Presenting the Data structure tutorial
-* [Data structure Queue]()
+* [Data structure Queue](https://github.com/ghostrider86/data_structure_final/blob/main/Queue.md)
 * [Data structure Linked List]()
 * [Data structure Tree]()
 
