@@ -265,4 +265,4 @@ Using the code above and these songs and artist test your program with the follo
 *  Test 2: Search for all songs by artist, aka Beatles
 *  Test 3: Search and remove song by title
 If you need more an example or check here is a solution: [Solution](https://github.com/ghostrider86/data_structure_final/blob/main/playlist.py)
-[Homepage](https://github.com/ghostrider86/data_structure_final/blob/main/playlist.py)
+[Homepage](https://github.com/ghostrider86/data_structure_final)
