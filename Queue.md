@@ -2,7 +2,13 @@
 A Queue is a linear structure which follows a certain order that operations are performed, FIFO for short standing for first in, first out
 As shown below:
 ![example of FIFO](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/02/Queue.png)
-When it comes to queues in python there are four main operations
+
+| Queue Operations     | Description                    | TIme Complexity      |
+| -------------------- | -----------------              | -------------------- |
+| Enqueue              | Adds an item to the queue      | O(1)                 |
+| Dequeue              | Removes an item from the queue | O(1)                 |
+| Front                | Get the front item from queue  | O(1)                 |
+| Rear                 | Get the last item from queue   | O(1)                 |
 
 ## Queue Implementation
 There are three different types of Queue implementation in Python: 
@@ -10,49 +16,110 @@ There are three different types of Queue implementation in Python:
 * queue.Queue
 * collections.Queue
 
-**I will describe each one briefly but the one I will be USING IN MY EXAMPLE CODE will be list implementation.**
+The one we will be focusing on in this tutorial is list implementation, when it should be utilized, its effeciency, some examples, and a problem to solve using list imlplementation.
 
 ### List Implementation
-In python Lists are a data structure that can be used as a queue. WHich means append() and pop() can be used as replacement for enqueue() and dequeue(). Repeating the example above but with list implementation:
+In python Lists are a data structure that can be used as a queue. Which means append() and pop() can be used as replacement for enqueue() and dequeue(). Lists can be quite slow for this purpose since insering or deleting an element would require shifting all other elements by one. Which would make the dequeue operation as shown in the table above require O(n) time in lists instead of O(1).
+
+To demonstrate how to the list data type to implement a queue, we will be going though a 7 step process
+1. To make things easier we will write the queue in a class, so starts off by writing a class called Queue.
+2. Next set a variable to store the data in the class, name the variable elements.
 
 ```python
-q = []
-q.append('how')
-q.append('are')
-q.append('you')
-q.pop(0)
+class Queue:
+
+	def __init__(self):
+		self.elements = []
+
 ```
-Just like the answer above it pops or removes the first in the list and we are left with "are you" in the queue.
+3. Inserting data into a queue aka enqueue as mentioned above we will need to use the **append()** method of the list data type to add data at the end.
 
-### queue.Queue Implementation
-Queue is a built in module in python that implements a queue, which initilizes a variable to a max size. Operations are as follows:
-
-* full(),returns True if there are maxsize items in the queue.
-* get(), This removes and return an item from the queue.
-* put(item),Puts an item into the queue.
-* maxsize, sets the number of items allowed in the queue.
-* empty(), checks if the queue is empty and returns True, False otherwise.
-
-#### Operations in Python 
-
-1. Enqueue, which adds an item to the queue.
-2. Dequeue, Removes an item from the queue. The items are popped in the same order in which they were pushed.
-3. Front, Gets the front item from queue.
-4. Rear, Gets the last item from queue. 
-
-For example lets say we have the following:
 ```python
-import queue
-q = Queue()
-q.enqueue('how')
-q.enqueue('are')
-q.enqueue('you')
-q.dequeue()
-```
-If there was no dequeue at the end it would simply say "how are you" but since there is we apply FIFO which would remove the first item in the list and we are left with "are you"
+class Queue:
 
-### collections.deque Implementation
-As shared previously that queue in Python can be implemented using deque, and deque is preferred over lists when quicker pop and append operations are needed. So instead of enqueue and deque, append() and popleft() functions are used.
+	def __init__(self):
+		self.elements = []
+    # step 3
+    def enqueue(self, data):
+		self.elements.append(data)
+		return data
+```
+4. To remove data from a queue aka dequeue as mentioned above we will need to use the **pop()** method of the list data type to delete an element from the list of the given index, if no index is specified it will delete the last element of the list. 
+
+```python
+class Queue:
+
+	def __init__(self):
+		self.elements = []
+    # step 3
+    def enqueue(self, data):
+		self.elements.append(data)
+		return data
+    # Step 4
+    def dequeue(self):
+		return self.elements.pop(0)
+```
+5. To get the method rear() to work, you just need to add negative indexing in the list data type to get the last element of the queue.
+```python
+class Queue:
+
+	def __init__(self):
+		self.elements = []
+    # step 3
+    def enqueue(self, data):
+		self.elements.append(data)
+		return data
+    # Step 4
+    def dequeue(self):
+		return self.elements.pop(0)
+    # Step 5
+    def rear(self):
+		return self.elements[-1]
+```
+6. To get the method front() to work, you can use the list index to get the first elemnet of the queue.
+```python
+class Queue:
+
+	def __init__(self):
+		self.elements = []
+    # step 3
+    def enqueue(self, data):
+		self.elements.append(data)
+		return data
+    # Step 4
+    def dequeue(self):
+		return self.elements.pop(0)
+    # Step 5
+    def rear(self):
+		return self.elements[-1]
+    # Step 6
+    def front(self):
+		return self.elements[0]
+```
+7. To find out if the queue is empty, that can be done by checking the length of the list using **len()** and checking if the list size equals 0.
+```python
+class Queue:
+
+	def __init__(self):
+		self.elements = []
+    # step 3
+    def enqueue(self, data):
+		self.elements.append(data)
+		return data
+    # Step 4
+    def dequeue(self):
+		return self.elements.pop(0)
+    # Step 5
+    def rear(self):
+		return self.elements[-1]
+    # Step 6
+    def front(self):
+		return self.elements[0]
+    # Step 7
+    def is_empty(self):
+		return len(self.elements) == 0
+```
+
 
 ## Example of Queue List Implementation
 In the example below is an example of list implementation. This program is a customer service call list. Which add members to a call list and add or removes them from the list when the employee finishes talking to them.
