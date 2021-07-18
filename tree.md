@@ -215,12 +215,26 @@ music_tree.insert(Binary_Search_Tree.Song(5,"The Beatles","Yellow Submarine"))
 music_tree.insert(Binary_Search_Tree.Song(6,"MCR","Black Parade"))
 music_tree.insert(Binary_Search_Tree.Song(7,"Montrose","Bad Motorscooter"))
 music_tree.insert(Binary_Search_Tree.Song(8,"Osmunds","Crazy Horses"))
-music_tree.insert(Binary_Search_Tree.Song(9,"Yesterday","Viva La vida"))
+music_lib.insert_tail(Linked_list.Node("Yesterday", "The Beatles"))
 music_tree.display_library()
 
 ```
+Epected output:
 
-Keep in mind the example shown above because you will need to use it to solve the problem ahead.
+===========  Example 1 TESTS ===========
+Song: At the Door Artist: Strokes
+Song: Bad Motorscooter Artist: Montrose
+Song: Black Parade Artist: MCR
+Song: Crazy Horses Artist: Osmunds
+Song: Mr.Brightside Artist: The Killers
+Song: One more Time Artist: Daft Punk
+Song: Viva La vida Artist: Coldplay
+Song: Yellow Submarine Artist: The Beatles
+Song: Yesterday Artist: The Beatles
+
+**Keep in mind the example shown above because you will need to use it to solve the problem ahead.**
+
+
 ## Problem to Solve
 Using the example above, write a program that will sort through songs, check if there in the playlist, and search by artist.
 | Song                 | Artist             |
