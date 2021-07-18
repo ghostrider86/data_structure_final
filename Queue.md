@@ -1,5 +1,5 @@
 # Queue
-A Queue is a linear structure which follows a certain order that operations are performed, FIFO for short standing for first in, first out
+A Queue is a linear structure which follows a certain order that operations are performed. FIFO for short which stands for first in, first out
 As shown below:
 ![example of FIFO](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/02/Queue.png)
 
@@ -16,10 +16,10 @@ There are three different types of Queue implementation in Python:
 * queue.Queue
 * collections.Queue
 
-The one we will be focusing on in this tutorial is list implementation, when it should be utilized, its effeciency, some examples, and a problem to solve using list imlplementation.
+The one we will be focusing on in this tutorial is list implementation, when it should be utilized, its effeciency, and a problem to solve using list imlplementation.
 
 ### List Implementation
-In python Lists are a data structure that can be used as a queue. Which means append() and pop() can be used as replacement for enqueue() and dequeue(). Lists can be quite slow for this purpose since insering or deleting an element would require shifting all other elements by one. Which would make the dequeue operation as shown in the table above require O(n) time in lists instead of O(1).
+In python, Lists are data structures that can be used as a queue. Which means append() and pop() can be used as a replacement for enqueue() and dequeue(). Lists can be quite slow for this purpose since inserting or deleting an element would require shifting all other elements by one. Which would make the dequeue operation as shown in the table above require O(n) time in lists instead of O(1).
 
 To demonstrate how to the list data type to implement a queue, we will be going though a 7 step process
 1. To make things easier we will write the queue in a class, so starts off by writing a class called Queue.
