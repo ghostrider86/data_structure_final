@@ -221,16 +221,16 @@ music_tree.display_library()
 ```
 Epected output:
 
-===========  Example 1 TESTS ===========
-Song: At the Door Artist: Strokes
-Song: Bad Motorscooter Artist: Montrose
-Song: Black Parade Artist: MCR
-Song: Crazy Horses Artist: Osmunds
-Song: Mr.Brightside Artist: The Killers
-Song: One more Time Artist: Daft Punk
-Song: Viva La vida Artist: Coldplay
-Song: Yellow Submarine Artist: The Beatles
-Song: Yesterday Artist: The Beatles
+Example 1 TESTS:
+* Song: At the Door Artist: Strokes
+* Song: Bad Motorscooter Artist: Montrose
+* Song: Black Parade Artist: MCR
+* Song: Crazy Horses Artist: Osmunds
+* Song: Mr.Brightside Artist: The Killers
+* Song: One more Time Artist: Daft Punk
+* Song: Viva La vida Artist: Coldplay
+* Song: Yellow Submarine Artist: The Beatles
+* Song: Yesterday Artist: The Beatles
 
 **Keep in mind the example shown above because you will need to use it to solve the problem ahead.**
 
