@@ -15,12 +15,12 @@ What makes a tree into a binary tree is when it links to at maximum two other no
 As shown in the picture above these are the key terminologies related to a binary tree
  
 
-**Node** - The most elementary unit of a binary tree.
-**Root** - The root of a binary is the topmost element. There is only one root in a binary tree.
-**Leaf** - The leaves of a binary tree are the nodes which have no children.
-**Level** - The level is the generation of the respective node. The root has level 0, the children of the root node is at level 1, the grandchildren of the root node is at level 2 and so on.
-**Parent** - The parent of a node is the node that is one level upward of the node.
-**Child** - The children of a node are the nodes that are one level downward of the node.
+* **Node** - The most elementary unit of a binary tree.
+* **Root** - The root of a binary is the topmost element. There is only one root in a binary tree.
+* **Leaf** - The leaves of a binary tree are the nodes which have no children.
+* **Level** - The level is the generation of the respective node. The root has level 0, the children of the root node is at level 1, the grandchildren of the root node is at level 2 and so on.
+* **Parent** - The parent of a node is the node that is one level upward of the node.
+* **Child** - The children of a node are the nodes that are one level downward of the node.
 
 ### Implementing a binary tree
 
