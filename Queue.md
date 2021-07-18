@@ -19,10 +19,9 @@ There are three different types of Queue implementation in Python:
 The one we will be focusing on in this tutorial is list implementation, when it should be utilized, its effeciency, and a problem to solve using list imlplementation.
 
 ### List Implementation
-In python, Lists are data structures that can be used as a queue. Which means append() and pop() can be used as a replacement for enqueue() and dequeue(). Lists can be quite slow for this purpose since inserting or deleting an element would require shifting all other elements by one. Which would make the dequeue operation as shown in the table above require O(n) time in lists instead of O(1).
-
-To demonstrate how to the list data type to implement a queue, we will be going though a 7 step process
-1. To make things easier we will write the queue in a class, so starts off by writing a class called Queue.
+In python, Lists are data structures that can be used as a queue. Which means append() and pop() can be used as a replacement for enqueue() and dequeue(). Lists can be quite slow for this purpose since inserting or deleting an element would require shifting all other elements by one. This would make the dequeue operation as shown in the table above require O(n) time in lists instead of O(1).
+To demonstrate how to the list data type to implement a queue, we will be going through a 7 step process
+1. To make things easier we will write the queue in a class, so starts by writing a class called Queue.
 2. Next set a variable to store the data in the class, name the variable elements.
 
 ```python
