@@ -249,7 +249,7 @@ music_lib.display_library()
 ```
 Keep in mind the example shown above because you will need to use it to solve the problem ahead.
 ## Problem to Solve
-Using the example above, write a program that will sort through ad remove songs or artist from the linked list. 
+Using the example above, write a program that will sort through and remove songs or artist from the linked list. 
 | Song                 | Artist             |
 | -------------------- | ------------------ |
 | Viva La vida         | Coldplay           |
