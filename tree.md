@@ -10,6 +10,8 @@ What makes a tree into a binary tree is when it links to at maximum two other no
 * pointer to left child
 
 ![Picture of binary tree](https://miro.medium.com/max/975/1*PWJiwTxRdQy8A_Y0hAv5Eg.png)
+
+
 As shown in the picture above these are the key terminologies related to a binary tree
  
 
