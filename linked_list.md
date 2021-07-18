@@ -1,62 +1,15 @@
 # Linked list
 
-Linked lists are sequences of data elements, connected via links. The data elements contain connection to another through pointers. Since the Python library does not have linked list in its standard library, we implement linked list through nodes. A node is a combination of the value and the pointers representing one item in the linked list.
+A linked list is a collection of data that can be sorted in order or a random way in memory. Where each element in the linked list has a specific spot in memory, and if the data is randomized there is no way of knowing if one element in next to another. Which is why in order to organize the list each element or in other words a **node** has a value and pointer to the next node in the list. And as shown in th picture below the first node is known as the head, and knowing where the head is will help one taverse through the linked list.
 
- 
+![example of a linked list](https://www.studytonight.com/code/python/ds/images/linked-list-1.png)
 
-## How to create a linked list
 
-As mentioned before of the importance on Nodes we will using them to make a linked list. By creating a Node object and creating another class to use the Node object,  and by passing the appropriate value through the node object which will point to the next data elements.
+## Doubly Linked List
 
-```python
-class Node:
-    def __init__(self,data_value = None):
-    self.data_value = data_value
-    self.next_value = None
-class Link_List:
-    def __init__(self):
-        self.head_value = None
-link_list_1 = Link_List()
-link_list_1. head_value = Node("Sun")
-num_2 = Node("Mon")
-num_3 = Node("Tue")
-# The code below will Link the first node to second one
-link_list_1.head_value.next_value = num_2
-# The code below will Link the 2nd node to 3rd one
-num_2.next_value = num_3
-```
-## How to transverse through a linked list
-when you transverse through a linked list you can only go on the forward direction from the first data element. Then print the value of the next data element by assigning the pointer of the next node to the current data element.
+Now the list I want you to focus on is the doubly-linked list, since most linked lists have Bi-directional linking between nodes. So instead of having only one pointer to the next node that would limit you to only go forward in the list, the doubly linked list has pointers that point to the next and previous nodes. And like the single linked list this also has a head, and in addition has a tail that points to the end of the linked list.
 
-```python
-class Node:
-    def __init__(self,data_value = None):
-    self.data_value = data_value
-    self.next_value = None
-
-class Link_List:
-    def __init__(self):
-        self.head_value = None
-
-    def printed_list(self):
-        while printed_value is not None:
-            print(printed_value.data_value)
-            printed_value = printed_value.next_value
-link_list_1 = Link_List()
-link_list_1. head_value = Node("Sun")
-num_2 = Node("Mon")
-num_3 = Node("Tue")
-# The code below will Link the first node to second one
-link_list_1.head_value.next_value = num_2
-# The code below will Link the 2nd node to 3rd one
-num_2.next_value = num_3
-list.printed_list()
-```
-
-The expected output should be:
-* Sun
-* Mon
-* Tue
+![Doubly Linked List](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
 
 ## How to use insertion in a linked list
 To insert an element into a linked list you need to reassign the pointers from existing nodes with a newly inserted node. There are three ways a new data element can be inserted which is at the head, middle or tail of the linked list. 
