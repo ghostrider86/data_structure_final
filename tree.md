@@ -1,4 +1,4 @@
-#Trees
+# Trees
 When you have a linked list that has nodes its known as a tree. The nodes are connected by pointers, and what’s nice about a tree is that you can connect to multiple different nodes. And in this tutorial, we will discuss what makes up a binary tree, and a binary search tree(BST for short).
 
 ## Binary tree
