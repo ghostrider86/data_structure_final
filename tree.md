@@ -71,6 +71,9 @@ where 4 would be inserted into the empty node left of 6.
 ### Inserting into a Binary Search Tree
 When inserting data into a tree we can use the same node class in the example above and add an insert class to it. The insert
 class compares the value of the node to the parent node and depending if it more or less it goes right or left. Then the tree is printed
+Whats nice about using a BST is that compared to a dynamic array or linked list, which as described in the linked list tutorial has the O(n) 
+perfomance for searching for a location to insert a value; BST can seperate the list into a subtree with each comparison, 
+essesstially splitting the job in half using **recusion**, making the performance O(log n).
 
  ```python
 class Node:
