@@ -110,7 +110,7 @@ root.print_tree()
 
 The expected Output of the code above, should output: 3,6,12,14
 
-### traversing through a Binary Search Tree
+### Traversing through a Binary Search Tree
 When you traverse through a BST you want to display all the data contained in the tree. There are a few way to transvere through a BST. The Two we will go over is ordered and reversed Traversal. An ordered traversal goes from the smallest node to largest, with the opposite being from largest to smallest which would be a reverse Traverse. 
 
 #### Recursion
