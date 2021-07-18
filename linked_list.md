@@ -1,6 +1,6 @@
 # Linked list
 
-A linked list is a collection of data that can be sorted in order or a random way in memory. Where each element in the linked list has a specific spot in memory, and if the data is randomized there is no way of knowing if one element in next to another. Which is why in order to organize the list each element or in other words a **node** has a value and pointer to the next node in the list. And as shown in th picture below the first node is known as the head, and knowing where the head is will help one taverse through the linked list.
+A linked list is a collection of data that can be sorted in order, or a random way in memory. Each element in the linked list has a specific spot in memory, and if the data is randomized there is no way of knowing if one element is next to another. Which is why in order to organize the list, each element or in other words a **node** has a value and pointer to the next node in the list. And as shown in the picture below, the first node is known as the head. Knowing where the head is will help one taverse through the linked list.
 
 ![example of a linked list](https://www.studytonight.com/code/python/ds/images/linked-list-1.png)
 
