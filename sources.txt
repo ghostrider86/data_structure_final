@@ -1,0 +1,13 @@
+Below are lonks to sources I used and Pictures I used from their website:
+
+https://www.geeksforgeeks.org/implementing-forward-iterator-in-bst/
+
+https://www.geeksforgeeks.org/construct-bst-given-level-order-traversal/
+
+https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
+
+https://www.geeksforgeeks.org/queue-linked-list-implementation/
+
+https://www.tutorialspoint.com/using-list-as-stack-and-queues-in-python
+
+https://www.educative.io/edpresso/how-to-implement-a-queue-in-python
